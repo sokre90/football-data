@@ -1,0 +1,119 @@
+/*
+* {
+	margin: 0;
+}
+*/
+
+
+#banner {
+	text-align: center;
+	background: url(lige-petice.jpg);
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+	padding: 30px;
+	color: #fafafa;
+	
+}
+h1 {
+	text-shadow: 
+}
+.hidden {
+    display: none;
+}
+.templates dd {
+    color: cadetblue;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+	width: 60%;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.menu li {
+    float: left;
+	
+}
+
+.menu li a {
+    display: block;
+    color: #666;
+    padding: 14px 16px;
+    text-decoration: none;
+	margin: 0 auto;
+}
+/*
+.b-link:visited {
+	background-color: black;
+	color: yellow;
+}
+*/
+.b-link:hover {
+	background-color: black;
+	color: yellow;
+}
+
+.l-link:hover {
+	background-color: darkblue;
+	color: white;
+}
+
+.epl-link:hover {
+	background-color: #ED1A1A;
+	color: white;
+}
+
+.primera-link:hover {
+	background-color: rgb(198, 11, 30);
+	color: yellow;
+}
+
+.seriaa-link:hover {
+	background-color: green;
+	color: white;
+}
+
+table, th, td {
+	
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0 auto;
+	
+}
+/*
+tr:nth-child(even) {
+	color: darkslategrey;
+}
+*/
+.plus {
+	color: green;
+}
+.minus {
+	color: red;
+}
+
+/*
+.bundes-table {
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+}
+*/
+.league-content {
+	background-color: #fafafa;
+/*	width: 60%;*/
+}
+/*
+.ligue1-table {
+	background-color: #f3f3f3;
+}
+*/
