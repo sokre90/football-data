@@ -19,7 +19,7 @@
 //		
 //		$.ajax({
 //		  headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-//		  url: 'http://api.football-data.org/alpha/teams/'+teamId+'/players',
+//		  url: 'https://api.football-data.org/alpha/teams/'+teamId+'/players',
 //		  dataType: 'json',
 //		  type: 'GET',
 //		}).done(function(data) {
@@ -50,7 +50,7 @@ function getBundesligaTable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'http://api.football-data.org/alpha/soccerseasons/394/leagueTable',
+	 url: 'https://api.football-data.org/alpha/soccerseasons/394/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -71,7 +71,7 @@ function getLigue1Table() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'http://api.football-data.org/alpha/soccerseasons/396/leagueTable',
+	 url: 'https://api.football-data.org/alpha/soccerseasons/396/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -92,7 +92,7 @@ function getEplTable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'http://api.football-data.org/alpha/soccerseasons/398/leagueTable',
+	 url: 'https://api.football-data.org/alpha/soccerseasons/398/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -114,7 +114,7 @@ function getPrimeraTable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'http://api.football-data.org/alpha/soccerseasons/399/leagueTable',
+	 url: 'https://api.football-data.org/alpha/soccerseasons/399/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -135,7 +135,7 @@ function getSeriaATable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'http://api.football-data.org/alpha/soccerseasons/401/leagueTable',
+	 url: 'https://api.football-data.org/alpha/soccerseasons/401/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
