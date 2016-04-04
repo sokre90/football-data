@@ -46,6 +46,7 @@
 //	
 //};
 
+ // European Championships url: http://api.football-data.org/v1/soccerseasons/424
 function getBundesligaTable() { 
 		
 	$.ajax({
