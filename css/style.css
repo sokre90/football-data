@@ -70,16 +70,15 @@ h1 {
 	border-right: 0;
 }
 
-/*
 .b-link:visited {
-	background-color: black;
-	color: yellow;
+	border-bottom: 3px solid black;
+	
 }
-*/
 
 .b-link:hover {
 	background-color: black;
 	color: yellow;
+	
 }
 
 /*
@@ -119,6 +118,7 @@ table, th, td {
 	border-collapse: collapse;
 	margin: 0 auto;
 	width: 42.57%;	
+	margin-top: 5px;
 }
 
 th {
