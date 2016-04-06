@@ -19,7 +19,7 @@
 //		
 //		$.ajax({
 //		  headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-//		  url: 'https://api.football-data.org/alpha/teams/'+teamId+'/players',
+//		  url: 'http://api.football-data.org/alpha/teams/'+teamId+'/players',
 //		  dataType: 'json',
 //		  type: 'GET',
 //		}).done(function(data) {
@@ -51,7 +51,7 @@ function getBundesligaTable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'https://api.football-data.org/alpha/soccerseasons/394/leagueTable',
+	 url: 'http://api.football-data.org/alpha/soccerseasons/394/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -72,7 +72,7 @@ function getLigue1Table() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'https://api.football-data.org/alpha/soccerseasons/396/leagueTable',
+	 url: 'http://api.football-data.org/alpha/soccerseasons/396/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -93,7 +93,7 @@ function getEplTable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'https://api.football-data.org/alpha/soccerseasons/398/leagueTable',
+	 url: 'http://api.football-data.org/alpha/soccerseasons/398/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -115,7 +115,7 @@ function getPrimeraTable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'https://api.football-data.org/alpha/soccerseasons/399/leagueTable',
+	 url: 'http://api.football-data.org/alpha/soccerseasons/399/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -136,7 +136,7 @@ function getSeriaATable() {
 		
 	$.ajax({
 	 headers: { 'X-Auth-Token': 'a4ea8fa8ea164fc3b9b2d82cc86f2816' },
-	 url: 'https://api.football-data.org/alpha/soccerseasons/401/leagueTable',
+	 url: 'http://api.football-data.org/alpha/soccerseasons/401/leagueTable',
 	 dataType: 'json',
 	 type: 'GET',
 	}).done(function(data) {
@@ -160,18 +160,24 @@ $(document).ready(function() {
       source: Object.keys(availableTeams)
 		
     });
-	 $('#search').submit(function(event) {
-        event.preventDefault();
+//	 $('#search').submit(function(event) {
+//        event.preventDefault();
 //        $('.templates').show();
 //		getData();
-	});	
+//	});	
+	
+//	$('a').on('click', function(){
+//		$('ul.menu').find('a.active').removeClass('active');
+//		$(this).addClass('active');
+//	});
 	
 	// Bundesliga table appears
 	$('.b-link').click(function(event) {
 		event.preventDefault();
 		
 		$('.league-content').show();
-
+		
+		$('.bundes-table').empty();
 		$('.ligue1-table').empty();
 		$('.epl-table').empty();
 		$('.primera-table').empty();
@@ -190,6 +196,7 @@ $(document).ready(function() {
 		$('.league-content').show();
 		
 		$('.bundes-table').empty();
+		$('.ligue1-table').empty();
 		$('.epl-table').empty();
 		$('.primera-table').empty();
 		$('.seriaa-table').empty();
@@ -207,6 +214,7 @@ $(document).ready(function() {
 		
 		$('.bundes-table').empty();
 		$('.ligue1-table').empty();
+		$('.epl-table').empty();
 		$('.primera-table').empty();
 		$('.seriaa-table').empty();
 		
@@ -224,6 +232,7 @@ $(document).ready(function() {
 		$('.bundes-table').empty();
 		$('.ligue1-table').empty();
 		$('.epl-table').empty();
+		$('.primera-table').empty();
 		$('.seriaa-table').empty();
 		
 		$('.table-header').css({'background-color': 'rgb(198, 11, 30)', 'color': 'yellow'});
@@ -241,6 +250,7 @@ $(document).ready(function() {
 		$('.ligue1-table').empty();
 		$('.epl-table').empty();
 		$('.primera-table').empty();
+		$('.seriaa-table').empty();
 		
 		$('.table-header').css({'background-color': 'green', 'color': 'white'});
 		

@@ -2,30 +2,46 @@
 	margin: 0;
 }
 
+html {
+	background-color: green;
+}
+
 .hidden {
     display: none;
 }
 
 #banner {
 	text-align: center;
+/*
 	background:
-		radial-gradient(black 15%, transparent 16%) 0 0,
-		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(darkgreen 15%, transparent 16%) 0 0,
+		radial-gradient(darkgreen 15%, transparent 16%) 8px 8px,
 		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
 		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
 	background-color: #282828;
-	background-size:16px 16px;
+	background-size: 16px 16px;
 	padding: 30px;
+*/
 	
+	background:
+		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+	padding: 30px;
+
 }
 
 h1 {
 	color: #fafafa;	
-	text-shadow: 2px 2px 1px 5px #093611;  /* rgb(198, 11, 30) */
+	text-shadow: 2px 2px 1px 5px black; /* #093611; */
 }
 
 #background {
-	background-color: green;
 	background-image: url(final-project-images/soccer-304171.svg);
 	background-size: 1366px 720px;
     width: 1366px;
@@ -70,40 +86,59 @@ h1 {
 	border-right: 0;
 }
 
-.b-link:visited {
-	border-bottom: 3px solid black;
-	
-}
-
 .b-link:hover {
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
 	background-color: black;
 	color: yellow;
-	
 }
 
 /*
-.l-link:visited {
-	background-color: darkblue;
-	color: white;
+.b-link:active {
+	background-color: black;
+	color: yellow;
+}
+
+.active {
+	background-color: black;
+	color: yellow;
 }
 */
 
 .l-link:hover {
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
 	background-color: darkblue;
 	color: white;
 }
 
 .epl-link:hover {
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
 	background-color: #ED1A1A;
 	color: white;
 }
 
 .primera-link:hover {
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
 	background-color: rgb(198, 11, 30);
 	color: yellow;
 }
 
 .seriaa-link:hover {
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
 	background-color: green;
 	color: white;
 }
@@ -117,22 +152,27 @@ table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 	margin: 0 auto;
-	width: 42.57%;	
 	margin-top: 5px;
+	text-align: center;
 }
 
 th {
 	border: 1px solid #e7e7e7;
 }
-/*
-tr:nth-child(even) {
-	color: darkslategrey;
+
+tbody {
+	background-color: #f3f3f3;	
 }
-*/
+
+tr:nth-child(even) {
+	background-color: #d9d9d9;
+}
 .plus {
 	color: green;
+	font-weight: bolder;
 }
 
 .minus {
 	color: red;
+	font-weight: bolder;
 }
