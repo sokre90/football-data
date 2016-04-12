@@ -3,6 +3,7 @@
 }
 
 html {
+	font-family: Century Gothic, sans-serif;
 	background-color: green;
 }
 
@@ -11,18 +12,8 @@ html {
 }
 
 #banner {
-	text-align: center;
-/*
-	background:
-		radial-gradient(darkgreen 15%, transparent 16%) 0 0,
-		radial-gradient(darkgreen 15%, transparent 16%) 8px 8px,
-		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color: #282828;
-	background-size: 16px 16px;
-	padding: 30px;
-*/
 	
+	text-align: center;	
 	background:
 		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
 		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
@@ -33,7 +24,6 @@ html {
 	background-color: #131313;
 	background-size: 20px 20px;
 	padding: 30px;
-
 }
 
 h1 {
@@ -41,24 +31,19 @@ h1 {
 	text-shadow: 2px 2px 1px 5px black; /* #093611; */
 }
 
-#background {
-	background-image: url(final-project-images/soccer-304171.svg);
-	background-size: 1366px 720px;
-    width: 1366px;
-	height: 720px;
+#background img {
+/*	background-size: 1366px 720px;*/
+    width: 100%; 
+	height: auto;
     background-repeat: no-repeat;
 	position: absolute;
 	z-index: -1;
+	overflow: hidden;	
 }
 
 #navigation-bar {
 	background-color: #f3f3f3;
-	box-shadow: 0px 1px 10px 5px #093611;
-}
-
-.league-content {
-	position: relative;
-	z-index: 1;	
+	box-shadow: 0px 1px 10px 5px #093611;	
 }
 
 .menu {
@@ -66,20 +51,19 @@ h1 {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-	width: 42.57%;
+/*	width: 42.57%;*/
     overflow: hidden;
-    background-color: #f3f3f3;
-	
+	display: flex;
+	justify-content: center;	
 }
 
 .menu li a {
-	
+	text-align: center;
     display: inline-block;
     color: #666;
     padding: 14px 16px;
     text-decoration: none;
-	float: left;
-	border-right: 1px solid #666;
+	border-right: 1px solid #666;	
 }
 
 .menu li:nth-last-child(1) a {
@@ -94,18 +78,6 @@ h1 {
 	background-color: black;
 	color: yellow;
 }
-
-/*
-.b-link:active {
-	background-color: black;
-	color: yellow;
-}
-
-.active {
-	background-color: black;
-	color: yellow;
-}
-*/
 
 .l-link:hover {
 	transition: background-color 0.5s ease;
@@ -143,6 +115,11 @@ h1 {
 	color: white;
 }
 
+.league-content {
+	position: relative;
+	z-index: 1;	
+}
+
 table {
 	box-shadow: 0px 2px 5px 5px #093611;
 }
@@ -167,6 +144,7 @@ tbody {
 tr:nth-child(even) {
 	background-color: #d9d9d9;
 }
+
 .plus {
 	color: green;
 	font-weight: bolder;
@@ -175,4 +153,29 @@ tr:nth-child(even) {
 .minus {
 	color: red;
 	font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+	
+	.menu li a {
+		border-bottom: 1px solid #e3e3e3;
+		border-right: none;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.menu {
+		display: block;
+		width: 100%;
+	}
+	
+	#background img {
+/*		background-size: 375px 667px;*/
+		-webkit-transform:rotate(90deg);
+    	-moz-transform:rotate(90deg);
+	}
+	
+	table {
+		font-size: smaller;
+	}
 }

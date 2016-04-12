@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Football Data</title>
+	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
+<!--	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+	
 </head>
 <body>
 <!--
@@ -46,11 +50,9 @@
    <!-- introduction banner -->
     <div id="banner">
     	<h1>the Big Five</h1>
-<!--    	<img src="lige-petice.jpeg" height="100" width="100">-->
     </div>
     <!-- league menu -->
-    <div id="background">
-    </div>
+    
     <div id="navigation-bar">
      
       <ul class="menu">
@@ -65,12 +67,16 @@
       
     </div>
     
+    <div id="background">
+    	<img src="css/final-project-images/soccer-304171.svg">
+    </div>
+    
     <!-- leagues' contents -->
     <div class="league-content hidden">
 	
-		<table>
+		<table class="table">
 			<tr class="table-header">
-				<th>Position</th>
+				<th>&nbsp; # &nbsp;</th>
 				<th>Team</th>
 				<th>Played</th>
 				<th>Points</th>
@@ -90,7 +96,9 @@
 	
 
 	<!-- script -->
+   
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<!--     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 	<script src="js/jquery-ui.min.js"></script>
     <script src="js/app.js"></script>
 </body>
